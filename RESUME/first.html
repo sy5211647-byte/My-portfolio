@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Era</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            /* Background me purani frame wali image */
+            background-image: url('34697.jpg.jpeg');
+            background-size: 100vw 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .content {
+            z-index: 10;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            color: green; /* Welcome to my era green color me */
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9);
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+        }
+
+        /* 🩵 Light Blue Buttons */
+        button {
+            background-color: #87CEFA; /* Light Blue color */
+            color: #002D62;
+            padding: 12px 25px;
+            border: 2px solid white;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 260px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        button:hover {
+            background-color: #00BFFF; /* Hover karne par thoda aur bright blue */
+            transform: scale(1.05);
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Udte hue naye image wale feathers */
+        .feather {
+            position: absolute;
+            bottom: -20%;
+            /* Nayi image yahan add ki gayi hai */
+            background-image: url('34692.jpeg');
+            background-size: cover;
+            background-position: center;
+            /* Is line se image feather jaisi oval shape ki ban jayegi */
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            animation: floatUp 10s linear infinite;
+            opacity: 0.85;
+            z-index: 1;
+        }
+
+        /* Alag-alag feathers ki size aur speed */
+        .f1 { left: 15%; animation-duration: 9s; animation-delay: 0s; width: 60px; height: 110px; }
+        .f2 { left: 35%; animation-duration: 12s; animation-delay: 2s; width: 80px; height: 140px; }
+        .f3 { left: 55%; animation-duration: 8s; animation-delay: 4s; width: 70px; height: 120px; }
+        .f4 { left: 75%; animation-duration: 11s; animation-delay: 1s; width: 90px; height: 150px; }
+        .f5 { left: 85%; animation-duration: 10s; animation-delay: 3s; width: 65px; height: 115px; }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            20% { opacity: 0.9; }
+            100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Udte hue Naye Feathers -->
+    <div class="feather f1"></div>
+    <div class="feather f2"></div>
+    <div class="feather f3"></div>
+    <div class="feather f4"></div>
+    <div class="feather f5"></div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>welcome to my era!</h1>
+        <p>This is my first HTML website.</p>
+        
+        <a href="https://www.youtube.com/@radheshayamdivine" target="_blank">
+            <button>Watch my youtube chanal !</button>
+        </a>
+        <br>
+        <a href="aboutme.html">
+            <button>About Me</button>
+        </a>
+        <br>
+        <a href="edu.html">
+            <button>Education</button>
+        </a>
+    </div>
+
+</body>
+</html>
